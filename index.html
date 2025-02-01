@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Disease Detection</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/XfZDRQyG/LOGO.png" alt="LOGO" border="0"></a>
+        <div class="animated-text">
+        <span>CropDetect</span>
+      </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#disease-library">Disease Library</a>
+        <a href="#upload">Upload Image</a>
+        <a href="#contact">Contact Us</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Detect Crop Diseases Instantly</h1>
+      <p>Upload a crop image and receive instant analysis to protect your crops.</p>
+      <button class="primary-btn">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Upload Section -->
+  <section id="upload" class="upload-section">
+    <div class="container">
+      <h2>Upload Your Crop Image</h2>
+      <form id="upload-form">
+        <div class="upload-box">
+          <i class="fas fa-cloud-upload-alt"></i>
+          <p>Drag & Drop or <span>Browse</span> to Upload</p>
+          <input type="file" id="crop-image" accept="image/*" />
+        </div>
+        <button type="submit" class="secondary-btn">Analyze Image</button>
+      </form>
+      <div id="result"></div>
+    </div>
+  </section>
+
+  <!-- Disease Library Section -->
+  <section id="disease-library" class="library">
+    <div class="container">
+      <h2>Crop Disease Library</h2>
+      <div class="disease-grid">
+        <div class="disease-card">
+          <img src="assets/disease1.jpg" alt="Powdery Mildew">
+          <h3>Powdery Mildew</h3>
+          <p>White powdery spots on leaves and stems. Use a sulfur-based fungicide.</p>
+        </div>
+        <div class="disease-card">
+          <img src="assets/disease2.jpg" alt="Leaf Rust">
+          <h3>Leaf Rust</h3>
+          <p>Brown rust-colored spots on leaves. Apply a fungicide with copper compounds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form method="post">
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+      <input type="button" onclick="window.location.href='/'" value="Send" id="contactUsBtn">
+    </form>
+  </div>
+  <script>
+    document.getElementById("contactUsBtn").onclick = function() {
+      alert("thank you for contacting us. we will contact you shortly");
+      window.location.href = "/";
+    };
+  </script>
+  
+  
+  <!-- Footer Section -->
+  <footer>
+    
+
+    </section>
+    <div class="container">
+      <p>© 2025 CropDetect. All Rights Reserved.</p>
+      <p>Contact: support@cropdetect.com</p>
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
